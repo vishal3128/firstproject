@@ -5,7 +5,7 @@ on: push
 jobs:
   super-lint:
     name: Lint code base
-    runs-on: ubuntu-latest
+    runs-on: github-runner-1
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -14,4 +14,4 @@ jobs:
         uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ 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}}
+          GITHUB_TOKEN: ${{ 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}}
